@@ -67,11 +67,11 @@ public final class PreferencesProvider {
             }
             public static boolean getShowSearchBar(Context context) {
                 final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                return preferences.getBoolean("ui_homescreen_general_search", true);
+                return preferences.getBoolean("ui_homescreen_general_search", false);
             }
             public static boolean getResizeAnyWidget(Context context) {
                 final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
-                return preferences.getBoolean("ui_homescreen_general_resize_any_widget", false);
+                return preferences.getBoolean("ui_homescreen_general_resize_any_widget", true);
             }
             public static boolean getHideIconLabels(Context context) {
                 final SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_KEY, 0);
